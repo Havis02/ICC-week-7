@@ -16,7 +16,7 @@ function setup() {
   shapey1 = new MovingShape();
   shapey2 = new MovingShape();
   for(let i = 0; i < 200; i++) {
-    shapeArr.push(new MovingShape());
+    shapeArr.push(new MovingShape(random(0, width), random(0,height),random(1,40)));
   }
 }
 
@@ -58,14 +58,10 @@ function display() {
 }
 class MovingShape {
 
-  constructor(){
-    this.x = width/2;  //middle
-    this.y = height/2; //centre
-    this.size = 10;
-    this.xSpeed = random(0.3,5);
-    this.ySpeed = random(0.3,5);
-    this.xDir = 1;
-    this.yDir = 1;
+  constructor(startX, startY, startSize){
+    this.x = startX;
+    this.y = startY;
+    this.size = startSize;
   }
 
   move(){
