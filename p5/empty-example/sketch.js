@@ -1,5 +1,6 @@
 let x,y,size;
 let xSpeed, ySpeed, xDir, yDir;
+let shapey1;
 
 function setup() {
   x = width/2;  //middle
@@ -52,10 +53,25 @@ class MovingShape {
   }
 
   move(){
+    this.x = this.x + (this.xSpeed * this.xDir);
+    this.y = this.y + (this.ySpeed * this.yDir);
+
+    if(this.x > (width-(this.size/2)) || this.x < (this.size/2)){
+        this.xDir = this.xDir * -1;
+            
+    }
+
+    if(this.y > (height-(this.size/2)) || this.y < (this.size/2)){
+        this.yDir = this.yDir * -1;
+    }
 
   }
 
   display(){
+    stroke(10);
+    rectMode(CENTER);
+    fill(0);
+    rect(this.x, this.y, this.size, this.size);
 
   }
 }
