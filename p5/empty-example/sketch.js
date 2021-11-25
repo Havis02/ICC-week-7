@@ -12,9 +12,12 @@ function setup() {
 }
 
 function draw() {
+  move();
   display();
 }
 function move() {
+  x = x + (xSpeed * xDir);
+  y = y + (ySpeed * yDir);
 
 }
 function display() {
