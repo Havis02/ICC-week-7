@@ -18,6 +18,12 @@ function draw() {
 function move() {
   x = x + (xSpeed * xDir);
   y = y + (ySpeed * yDir);
+  if(x > (width-size) || x < size){
+
+  }
+  if(y > (height-size) || y < size){
+    
+  }
 
 }
 function display() {
