@@ -19,10 +19,12 @@ function move() {
   x = x + (xSpeed * xDir);
   y = y + (ySpeed * yDir);
   if(x > (width-size) || x < size){
+             xDir = xDir * -1;
 
   }
   if(y > (height-size) || y < size){
-    
+              yDir = yDir * -1
+
   }
 
 }
