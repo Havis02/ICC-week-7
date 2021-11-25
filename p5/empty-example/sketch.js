@@ -1,6 +1,7 @@
 let x,y,size;
 let xSpeed, ySpeed, xDir, yDir;
 let shapey1;
+let shapey2;
 
 function setup() {
   x = width/2;  //middle
@@ -11,6 +12,7 @@ function setup() {
   xDir = 1;
   yDir = 1;
   shapey1 = new MovingShape();
+  shapey2 = new MovingShape();
 }
 
 function draw() {
@@ -20,6 +22,8 @@ function draw() {
   rect(0, 0, width, height);
   shapey1.move();
   shapey1.display();
+  shapey2.move();
+  shapey2.display();
   move();
   display();
 }
