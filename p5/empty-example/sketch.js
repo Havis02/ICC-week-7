@@ -10,6 +10,7 @@ function setup() {
   ySpeed = random(0.3,5);
   xDir = 1;
   yDir = 1;
+  shapey1 = new MovingShape();
 }
 
 function draw() {
@@ -17,6 +18,8 @@ function draw() {
   rectMode(CORNER);
   fill(255,255,255,80);
   rect(0, 0, width, height);
+  shapey1.move();
+  shapey1.display();
   move();
   display();
 }
