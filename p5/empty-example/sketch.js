@@ -5,6 +5,7 @@ let shapey1;
 let shapey2;
 
 function setup() {
+  createCanvas (600,600);
   x = width/2;  //middle
   y = height/2; //centre
   size = 10;
