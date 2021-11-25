@@ -12,7 +12,7 @@ function setup() {
 }
 
 function draw() {
-  nostroke();
+  noStroke();
   rectMode(CORNER);
   fill(255,255,255,80);
   rect(0, 0, width, height);
