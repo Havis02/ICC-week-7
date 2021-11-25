@@ -94,3 +94,16 @@ class MovingShape {
 
   }
 }
+class MovingCircle extends MovingShape {
+  constructor(startX, startY, startSize, colour){
+
+  }
+
+  move() {
+
+  }
+
+  display() {
+    
+  }
+}
