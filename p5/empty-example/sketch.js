@@ -30,6 +30,10 @@ function draw() {
   shapey2.display();
   move();
   display();
+  for(let i = 0; i < 200; i++) {
+    shapeArr[i].move();
+    shapeArr[i].display();
+  }
 }
 function move() {
   x = x + (xSpeed * xDir);
