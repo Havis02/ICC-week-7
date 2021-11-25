@@ -12,7 +12,7 @@ function setup() {
 }
 
 function draw() {
-
+  display();
 }
 function move() {
 
