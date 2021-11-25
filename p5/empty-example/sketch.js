@@ -39,3 +39,9 @@ function display() {
   rect(x, y, size, size);
 
 }
+class MovingShape {
+
+  constructor(){
+    
+  }
+}
