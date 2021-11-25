@@ -96,14 +96,20 @@ class MovingShape {
 }
 class MovingCircle extends MovingShape {
   constructor(startX, startY, startSize, colour){
+    super(startX,startY,startSize);
+    this.colour = colour;
 
   }
 
   move() {
+    super.move();
 
   }
 
   display() {
-    
+    noStroke();
+    fill(this.colour);
+    ellipse(this.x, this.y, this.size, this.size)
+
   }
 }
