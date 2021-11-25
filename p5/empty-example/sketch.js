@@ -3,6 +3,7 @@ let x,y,size;
 let xSpeed, ySpeed, xDir, yDir;
 let shapey1;
 let shapey2;
+let circ;
 
 function setup() {
   createCanvas (600,600);
@@ -13,11 +14,12 @@ function setup() {
   ySpeed = random(0.3,5);
   xDir = 1;
   yDir = 1;
-  shapey1 = new MovingShape();
-  shapey2 = new MovingShape();
+  //shapey1 = new MovingShape();
+  //shapey2 = new MovingShape();
   for(let i = 0; i < 200; i++) {
     shapeArr.push(new MovingShape(random(0, width), random(0,height),random(1,40)));
   }
+  circ = new MovingCircle(random(0, width), random(0,height),random(1,40));
 }
 
 function draw() {
@@ -25,10 +27,13 @@ function draw() {
   rectMode(CORNER);
   fill(255,255,255,80);
   rect(0, 0, width, height);
-  shapey1.move();
-  shapey1.display();
-  shapey2.move();
-  shapey2.display();
+  //shapey1.move();
+  //shapey1.display();
+  //shapey2.move();
+  //shapey2.display();
+  circ.move();
+  circ.display();
+  
   move();
   display();
   for(let i = 0; i < 200; i++) {
@@ -97,7 +102,7 @@ class MovingShape {
 class MovingCircle extends MovingShape {
   constructor(startX, startY, startSize, colour){
     super(startX,startY,startSize);
-    this.colour = colour;
+    this.colour = color(255,255,0);
 
   }
 
