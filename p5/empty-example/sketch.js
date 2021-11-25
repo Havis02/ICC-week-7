@@ -42,6 +42,20 @@ function display() {
 class MovingShape {
 
   constructor(){
-    
+    this.x = width/2;  //middle
+    this.y = height/2; //centre
+    this.size = 10;
+    this.xSpeed = random(0.3,5);
+    this.ySpeed = random(0.3,5);
+    this.xDir = 1;
+    this.yDir = 1;
+  }
+
+  move(){
+
+  }
+
+  display(){
+
   }
 }
