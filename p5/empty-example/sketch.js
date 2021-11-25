@@ -17,6 +17,10 @@ function draw() {
 function move() {
 
 }
-function display(){
+function display() {
+  stroke(10);
+  rectMode(CENTER);
+  fill(0);
+  rect(x, y, size, size);
 
 }
